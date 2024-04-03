@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "generate",
+    "invisible_unicode"
+]
+resolver = "2"

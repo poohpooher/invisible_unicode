@@ -1,0 +1,18 @@
+[package]
+name = "invisible_unicode"
+version = "0.1.0"
+edition = "2021"
+authors = ["poohpooher <poohpooher@gmail.com>"]
+description = "Library for finding invisible unicode characters."
+license = "MIT"
+repository = "https://github.com/poohpooher/invisible_unicode"
+documentation = "https://docs.rs/invisible_unicode/latest/invisible_unicode/"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["lib"]
+
+[dependencies]
+
+[dev-dependencies]
+rand = "0.8.5"
