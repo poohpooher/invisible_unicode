@@ -25,6 +25,20 @@ impl InvisibleChecker {
         &self.invisibilities
     }
 
+    /// Remove invisible characters from the left of the name.
+    pub fn left_trim<'a>(&self, name: &'a str) -> &'a str {
+        name.trim_start_matches(self.invisibilities.as_slice())
+    }
+
+    /// Remove invisible characters from the right of the name.
+    pub fn right_trim<'a>(&self, name: &'a str) -> &'a str {
+        name.trim_end_matches(self.invisibilities.as_slice())
+    }
+
+    /// Remove invisible characters from both sides of the name.
+    pub fn trim<'a>(&self, name: &'a str) -> &'a str {
+        name.trim_matches(self.invisibilities.as_slice())
+    }
 }
 
 pub struct InvisibleCheckerBuilder {
